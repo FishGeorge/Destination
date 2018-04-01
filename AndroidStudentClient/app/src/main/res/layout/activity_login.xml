@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_backg"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        app:title="Log in"
+        app:titleTextColor="@color/White" />
+
+    <TextView
+        android:id="@+id/login_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:text="帐  号"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_login" />
+
+    <TextView
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="密  码"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_account" />
+
+    <TextView
+        android:id="@+id/login_register_text"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="212dp"
+        android:layout_marginStart="64dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="还没有帐号？"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/login_register"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="212dp"
+        android:layout_marginEnd="68dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="注册Desitnation帐号"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="212dp"
+        android:layout_marginEnd="68dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="注册Desitnation帐号"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_account"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toEndOf="@+id/login_account"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_login" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/edit_account" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/edit_password"
+        app:layout_constraintTop_toBottomOf="@+id/edit_account" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="294dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg_normal"
+        android:shadowRadius="0"
+        android:text="登    录"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+</android.support.constraint.ConstraintLayout>
