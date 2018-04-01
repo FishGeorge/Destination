@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+	<package name="server" namespace="/" extends="struts-default,json-default">
+		<action name="Demo2Action" class="server.Demo2Action" method="execute">
+			<result name="success" type="redirect">/hello.jsp</result>
+		</action>
+		<action name="Demo1Action" class="server.Demo1Action" method="execute">
+			<result name="success" type="redirect">/hello.jsp</result>
+		</action>
+		<action name="Demo3Action" class="server.Demo3Action" method="execute">
+			<result name="success" type="redirect">/hello.jsp</result>
+		</action>
+		<action name="JsonAction" class="server.JsonAction" method="execute">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+	</struts>
