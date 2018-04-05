@@ -1,2 +1,2 @@
-# Destination-provisional
-Course Project of "Software Architecture Theory"
+收取能量功能，定位功能仍尚未解决。。。
+不好意思。。
