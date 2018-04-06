@@ -37,6 +37,9 @@
         <activity
             android:name="com.seuse16.destination.SettingActivity"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.seuse16.destination.MainActivity"
+            android:theme="@style/FullScreenStyle" />
 
         <meta-data
             android:name="android.support.VERSION"

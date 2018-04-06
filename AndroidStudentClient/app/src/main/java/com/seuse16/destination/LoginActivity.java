@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                 // 此处调用登陆函数
 
                 // 页面跳转
-//                startActivity(LoginActivity.this,  xxxx.class);
+//                startActivity(LoginActivity.this,MainActivity.class);
                 finish();
             }
         });
