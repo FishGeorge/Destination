@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         final EditText password = findViewById(R.id.edit_password);
         TextView clickable_text_register = findViewById(R.id.login_register);
         final CheckBox cb_password = findViewById(R.id.checkBox);
-        Button btn_login=findViewById(R.id.btn_login);
+        Button btn_login = findViewById(R.id.btn_login);
         // 密码明文密文设置
         cb_password.setChecked(false);
         cb_password.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                 // 此处调用登陆函数
 
                 // 页面跳转
-//                startActivity(LoginActivity.this,MainActivity.class);
+                startActivity(new Intent(LoginActivity.this,MainActivity.class));
                 finish();
             }
         });
