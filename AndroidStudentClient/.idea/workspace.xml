@@ -14,15 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17385a58-a894-4a72-aeaf-d0875fe42f5a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_circle_red.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/seuse16/destination/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/seuse16/destination/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/LoginActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/RegisterActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/RunningActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/RunningActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_running.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_running.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+      <change beforePath="$PROJECT_DIR$/../素材库/InitialLogo.png" afterPath="$PROJECT_DIR$/../素材库/InitialLogo.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,7 +49,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="736">
@@ -68,14 +61,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-          <provider selected="true" editor-type-id="android-designer2">
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="144" column="32" lean-forward="true" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -2121,17 +2114,17 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout-v23/activity_register.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/btn_circle_red.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_running.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/RunningActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -2186,6 +2179,12 @@
               <item name="AndroidStudentClient" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="AndroidStudentClient" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="AndroidStudentClient" type="1abcf292:AndroidViewProjectNode" />
@@ -2421,7 +2420,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="1" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32960895" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2704,11 +2703,11 @@
         <state relative-caret-position="368">
           <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1367#1746#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-            <element signature="e#1812#2016#0" expanded="true" />
-            <element signature="e#2015#2016#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="false" />
+            <element signature="e#1367#1746#0" expanded="false" />
+            <element signature="e#1745#1746#0" expanded="false" />
+            <element signature="e#1812#2016#0" expanded="false" />
+            <element signature="e#2015#2016#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2786,6 +2785,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="144" column="32" lean-forward="true" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/seuse16/destination/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -2794,17 +2804,6 @@
             <element signature="e#2247#2248#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
   </component>
