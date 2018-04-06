@@ -388,6 +388,10 @@
         "source": "C:\\Users\\37280\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f70b4ea0494f63eef0ae51c30ab2ab45\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
+        "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_initiallogo_green.png.flat",
+        "source": "E:\\Github\\Destination\\AndroidStudentClient\\app\\src\\main\\res\\drawable\\initiallogo_green.png"
+    },
+    {
         "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\37280\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f70b4ea0494f63eef0ae51c30ab2ab45\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
@@ -582,6 +586,10 @@
     {
         "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\37280\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f70b4ea0494f63eef0ae51c30ab2ab45\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_circle_red.xml.flat",
+        "source": "E:\\Github\\Destination\\AndroidStudentClient\\app\\src\\main\\res\\drawable\\btn_circle_red.xml"
     },
     {
         "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -882,6 +890,10 @@
     {
         "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\37280\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f70b4ea0494f63eef0ae51c30ab2ab45\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_setting.xml.flat",
+        "source": "E:\\Github\\Destination\\AndroidStudentClient\\app\\src\\main\\res\\layout\\activity_setting.xml"
     },
     {
         "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1538,6 +1550,10 @@
     {
         "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\37280\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f70b4ea0494f63eef0ae51c30ab2ab45\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_logo.png.flat",
+        "source": "E:\\Github\\Destination\\AndroidStudentClient\\app\\src\\main\\res\\drawable\\login_logo.png"
     },
     {
         "merged": "E:\\Github\\Destination\\AndroidStudentClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",

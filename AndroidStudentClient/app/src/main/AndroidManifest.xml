@@ -22,10 +22,15 @@
             android:theme="@style/FullScreenStyle" />
         <activity
             android:name=".RunningActivity"
-            android:theme="@style/FullScreenStyle" />
+            android:theme="@style/FullScreenStyle">
+        </activity>
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/FullScreenStyle"/>
+            android:theme="@style/FullScreenStyle" />
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/AppTheme"
+            />
     </application>
 
 </manifest>

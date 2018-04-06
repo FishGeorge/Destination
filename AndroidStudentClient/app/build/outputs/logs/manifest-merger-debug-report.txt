@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\f70b4ea0494f63eef0ae51c30ab2ab45\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\db14e466738ac3a282c58022f323d8d1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\8e4f09a54a5240304513dce310898525\AndroidManifest.xml:17:1-28:12
@@ -15,25 +15,25 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\37280\.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\ca1e7140ef2eb47b8eb47d43ff2e9a23\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\7b36113cdbc66eecbfe4c8b9725b9ccc\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f88a83393373e7c6accc634e7482acf3\AndroidManifest.xml:17:1-30:12
-INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml
-		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml
-		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:5:5-29:19
+ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:5:5-34:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\f70b4ea0494f63eef0ae51c30ab2ab45\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\f70b4ea0494f63eef0ae51c30ab2ab45\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\37280\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\db14e466738ac3a282c58022f323d8d1\AndroidManifest.xml:9:5-20
@@ -89,17 +89,23 @@ ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManife
 	android:name
 		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:21:13-42
 activity#com.seuse16.destination.RunningActivity
-ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:23:9-25:54
+ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:23:9-26:20
 	android:theme
 		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:25:13-51
 	android:name
 		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:24:13-44
 activity#com.seuse16.destination.RegisterActivity
-ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:26:9-28:53
+ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:27:9-29:54
 	android:theme
-		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:28:13-51
+		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:29:13-51
 	android:name
-		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:27:13-45
+		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:28:13-45
+activity#com.seuse16.destination.SettingActivity
+ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:30:9-33:15
+	android:theme
+		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:32:13-44
+	android:name
+		ADDED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml:31:13-44
 uses-sdk
 INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Github\Destination\AndroidStudentClient\app\src\main\AndroidManifest.xml

@@ -9,6 +9,7 @@
     </style>
 
     <style name="FullScreenStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
