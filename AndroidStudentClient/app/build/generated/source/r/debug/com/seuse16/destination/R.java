@@ -2741,7 +2741,7 @@ public final class R {
     public static final int briefintroduction=0x7f070023;
     public static final int btn_login=0x7f070024;
     public static final int btn_register=0x7f070025;
-    public static final int button=0x7f070026;
+    public static final int btn_pause =0x7f070026;
     public static final int buttonPanel=0x7f070027;
     public static final int calorie=0x7f070028;
     public static final int cancel_action=0x7f070029;
@@ -2775,7 +2775,7 @@ public final class R {
     public static final int ifRoom=0x7f070045;
     public static final int image=0x7f070046;
     public static final int imageView=0x7f070047;
-    public static final int imageView2=0x7f070048;
+    public static final int image_bck_running =0x7f070048;
     public static final int info=0x7f070049;
     public static final int italic=0x7f07004a;
     public static final int line1=0x7f07004b;

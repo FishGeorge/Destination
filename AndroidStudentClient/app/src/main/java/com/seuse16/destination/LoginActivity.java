@@ -8,10 +8,12 @@ import android.support.v7.widget.Toolbar;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     public static String Cal_account = "admin";
@@ -27,8 +29,9 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_login);
         final EditText account = findViewById(R.id.edit_account);
         final EditText password = findViewById(R.id.edit_password);
-        TextView register = findViewById(R.id.login_register);
+        TextView clickable_text_register = findViewById(R.id.login_register);
         final CheckBox cb_password = findViewById(R.id.checkBox);
+        Button btn_login=findViewById(R.id.btn_login);
         // 密码明文密文设置
         cb_password.setChecked(false);
         cb_password.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -42,14 +45,34 @@ public class LoginActivity extends AppCompatActivity {
                     password.setTransformationMethod(PasswordTransformationMethod.getInstance());
             }
         });
-        // 下划线
-        register.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
+        // login button
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 此处调用登陆函数
+
+                // 页面跳转
+//                startActivity(LoginActivity.this,  xxxx.class);
+                finish();
+            }
+        });
+        // “注册”的下划线
+        clickable_text_register.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
         // 点击左下方“注册”，跳转注册界面
-        register.setOnClickListener(new View.OnClickListener() {
+        clickable_text_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
+    }
+
+    // 用于发送toast提示
+    protected boolean Toast_inLoggingin(int type) {
+        switch (type) {
+            case 1:
+                Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();
+        }
+        return false;
     }
 }
