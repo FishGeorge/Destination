@@ -25,6 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.seuse16.destination.LoginActivity" />
+        <activity
+            android:name="com.seuse16.destination.MainActivity"
+            android:theme="@style/AppTheme" />
 
         <meta-data
             android:name="android.support.VERSION"

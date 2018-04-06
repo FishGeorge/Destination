@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/FullScreenStyle">
-        <activity android:name="com.seuse16.destination.InitialActivity">
+        <activity android:name=".InitialActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.seuse16.destination.LoginActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
