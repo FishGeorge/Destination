@@ -13,6 +13,7 @@
             android:theme="@style/FullScreenStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -21,7 +22,10 @@
             android:theme="@style/FullScreenStyle" />
         <activity
             android:name=".RunningActivity"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+            android:theme="@style/FullScreenStyle" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/FullScreenStyle"/>
     </application>
 
 </manifest>

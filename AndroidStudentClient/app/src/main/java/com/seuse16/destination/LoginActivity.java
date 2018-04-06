@@ -1,5 +1,6 @@
 package com.seuse16.destination;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -22,13 +23,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        // 元件注册
         Toolbar toolbar = findViewById(R.id.toolbar_login);
         final EditText account = findViewById(R.id.edit_account);
         final EditText password = findViewById(R.id.edit_password);
         TextView register = findViewById(R.id.login_register);
         final CheckBox cb_password = findViewById(R.id.checkBox);
-
         // 密码明文密文设置
         cb_password.setChecked(false);
         cb_password.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -42,15 +42,13 @@ public class LoginActivity extends AppCompatActivity {
                     password.setTransformationMethod(PasswordTransformationMethod.getInstance());
             }
         });
-
         // 下划线
         register.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
-
         // 点击左下方“注册”，跳转注册界面
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
     }

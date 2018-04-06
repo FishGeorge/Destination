@@ -39,6 +39,7 @@
         android:layout_marginTop="8dp"
         android:text="0.00"
         android:textSize="80sp"
+        android:textColor="@color/White"
         app:layout_constraintBottom_toTopOf="@+id/totaltime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,6 +53,7 @@
         android:layout_marginEnd="32dp"
         android:text="00'00''"
         android:textSize="24sp"
+        android:textColor="@color/White"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/totaltime" />
 
@@ -63,6 +65,7 @@
         android:layout_marginStart="64dp"
         android:text="0"
         android:textSize="24sp"
+        android:textColor="@color/White"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toEndOf="@+id/totaltime" />
 
@@ -75,6 +78,7 @@
         android:layout_marginStart="8dp"
         android:text="00:00:00"
         android:textSize="24sp"
+        android:textColor="@color/White"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

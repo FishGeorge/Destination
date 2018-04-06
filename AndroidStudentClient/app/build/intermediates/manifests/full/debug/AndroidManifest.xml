@@ -14,7 +14,8 @@
         android:icon="@mipmap/logo_round"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        android:testOnly="true" >
         <activity
             android:name="com.seuse16.destination.InitialActivity"
             android:theme="@style/FullScreenStyle" >
@@ -29,6 +30,9 @@
             android:theme="@style/FullScreenStyle" />
         <activity
             android:name="com.seuse16.destination.RunningActivity"
+            android:theme="@style/FullScreenStyle" />
+        <activity
+            android:name="com.seuse16.destination.RegisterActivity"
             android:theme="@style/FullScreenStyle" />
 
         <meta-data

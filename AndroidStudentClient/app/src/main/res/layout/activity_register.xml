@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_backg"
+    >
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        android:title="Register"
+        android:titleTextColor="@color/White" />
+
+    <TextView
+        android:id="@+id/register_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:text="帐  号"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_register" />
+
+    <EditText
+        android:id="@+id/edit_account_r"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toEndOf="@+id/register_account"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_register" />
+
+    <TextView
+        android:id="@+id/register_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="密  码"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_account" />
+
+    <EditText
+        android:id="@+id/edit_password_r"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/register_password"
+        app:layout_constraintTop_toBottomOf="@+id/edit_account_r" />
+
+    <TextView
+        android:id="@+id/register_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="确  认"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+    <EditText
+        android:id="@+id/edit_password_r2"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/register_password2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_r" />
+
+    <TextView
+        android:id="@+id/register_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="昵  称"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password2" />
+
+    <EditText
+        android:id="@+id/edit_nickname"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toEndOf="@+id/register_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_r2" />
+
+    <TextView
+        android:id="@+id/register_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="性  别"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname" />
+
+    <TextView
+        android:id="@+id/register_gender_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:text="♂"
+        android:textColor="@color/Blue"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@id/register_gender"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname" />
+
+    <Switch
+        android:id="@+id/switch_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="@id/register_gender_male"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname" />
+
+    <TextView
+        android:id="@+id/register_gender_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="♀"
+        android:textColor="@color/Pink"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@id/switch_gender"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="294dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg_normal"
+        android:shadowRadius="0"
+        android:text="注    册"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_gender" />
+
+</android.support.constraint.ConstraintLayout>
