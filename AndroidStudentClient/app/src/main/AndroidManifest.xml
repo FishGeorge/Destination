@@ -19,15 +19,12 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/FullScreenStyle" />
-
         <activity
             android:name=".RunningActivity"
             android:theme="@style/FullScreenStyle" />
-
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/FullScreenStyle" />
-
         <activity
             android:name=".SettingActivity"
             android:theme="@style/AppTheme" />

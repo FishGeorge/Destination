@@ -1,14 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Exercise">
+    tools:context=".Main_Exercise"
+    android:background="@color/colorPrimary">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Exercise" />
+    <Button
+        android:id="@+id/btn_startrunning"
+        android:layout_width="294dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_bg_normal"
+        android:shadowRadius="0"
+        android:text="开 始 跑 步"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/image_bck"
+        android:layout_width="362dp"
+        android:layout_height="125dp"
+        android:src="@drawable/main_exercise_bckg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="80dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="早操跑步"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_startrunning"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_usual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="平时跑步"
+        android:textColor="@color/DarkGray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_morning"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_havegot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:layout_marginTop="60dp"
+        android:text="已得"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_fullscore"
+        app:layout_constraintTop_toTopOf="@+id/text_score" />
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="180dp"
+        android:text="100"
+        android:textColor="@color/White"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_fullscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="60dp"
+        android:text="/100"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_score_units"
+        app:layout_constraintTop_toTopOf="@+id/text_score" />
+
+    <TextView
+        android:id="@+id/text_score_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="60dp"
+        android:text="分"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_score" />
+
+    <TextView
+        android:id="@+id/text_locationinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="90dp"
+        android:text="附近跑操记录点："
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/image_bck"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text=""
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_locationinfo"
+        app:layout_constraintTop_toTopOf="@+id/text_locationinfo" />
+
+    <ImageView
+        android:id="@+id/image_location"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="4dp"
+        android:src="@android:drawable/ic_menu_mylocation"
+        app:layout_constraintEnd_toStartOf="@+id/text_locationinfo"
+        app:layout_constraintTop_toTopOf="@+id/text_locationinfo" />
+
+    <ImageView
+        android:id="@+id/image_exercise_info"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toEndOf="@+id/image_exercise_timetable"
+        app:layout_constraintTop_toBottomOf="@+id/image_exercise_timetable" />
+
+    <ImageView
+        android:id="@+id/image_exercise_timetable"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_menu_today"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_exercise_menu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

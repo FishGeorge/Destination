@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sun_f3">
+    tools:context=".Main_Discovery_nearby">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
