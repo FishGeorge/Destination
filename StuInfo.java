@@ -1,42 +1,17 @@
 package FunctionofStu;
-import java.sql.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.URL;
+import java.net.URLConnection;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
+
+import javax.xml.crypto.Data;
 public class StuInfo {
-	Connection conn=null;
 	Scanner sc=new Scanner(System.in);
-	/**
-	 * 函数名：connect()
-	 * 作者：曲正锟
-	 * 参数：无
-	 * 返回值：conn
-	 * 功能：用于连接数据库
-	 * @return
-	 */
-	public Connection connect() {
-		try{
-	        //加载及注册JDBC驱动程序
-	        Class.forName("com.mysql.jdbc.Driver");
-	    }catch(ClassNotFoundException e1){
-	    	System.out.println("找不到驱动程序类，加载驱动失败");
-	        e1.printStackTrace();
-	    }
-	    
-	    String url="jdbc:mysql://localhost:3306/Mysql?useSSL=false";    //JDBC的URL    
-	    //调用DriverManager对象的getConnection()方法，获得一个Connection对象
-	   
-	    try {
-	        conn = DriverManager.getConnection(url,"root","19970822zsq");
-	        //创建一个Statement对象
-	        Statement stmt = conn.createStatement(); //创建Statement对象
-	       // System.out.print("成功连接到数据库！");
-	       // stmt.close();
-	       // conn.close();
-	    } catch (SQLException e){
-	    	System.out.println("数据库连接失败");
-	        e.printStackTrace();
-	    }
-	    return conn;
-	}
 	/**
 	 * 函数名：InitialInfo()
 	 * 作者：曲正锟
@@ -46,39 +21,28 @@ public class StuInfo {
 	 * @return
 	 */
 	public void InitialInfo() {
-		 Connection cnn=connect();   
-		 String sql="insert into StudentInfo(id,stu_id,school_id,stu_name,stu_gender,phone_number,email) values(?,?,?,?,?,?,?)";
-		    try{  
-		        PreparedStatement preStmt =cnn.prepareStatement(sql); 
-		        System.out.println("请输入你的账号 ");
-		        String a=sc.nextLine();
-		        preStmt.setString(1,a);  
+		        HttpClient hc=new HttpClient();
+		        Map<String,Object> oo=new HashMap();
 		        System .out.println("请输入一卡通号");
-		        int b=sc.nextInt();
-		        preStmt.setInt(2,b);  
+		        int a=sc.nextInt();
+		        oo.put("stu_id", a);
 		        System .out.println("请输入学校编号");
-		        int c=sc.nextInt();
-		        preStmt.setInt(3,c);
+		        int b=sc.nextInt();
+		        oo.put("school_id", b);
 		        System.out.println("请输入你的姓名 ");
-		        String d=sc.nextLine();
-		        preStmt.setString(4,d);  
+		        String c=sc.nextLine();
+		        oo.put("stu_name", c); 
 		        System.out.println("请输入你的性别 ");
-		        int e=sc.nextInt();
-		        preStmt.setInt(5,e); 
+		        int d=sc.nextInt();
+		        oo.put("stu_gender", d);
 		        System.out.println("请输入你的电话号码 ");
-		        String f=sc.nextLine();
-		        preStmt.setString(6,f);  
+		        String e=sc.nextLine();
+		        oo.put("phone_number", e);
 		        System.out.println("请输入你的邮箱 ");
-		        String g=sc.nextLine();
-		        preStmt.setString(7,g);  
-		        preStmt.executeUpdate();  
-		    }  
-		    catch (SQLException e)  
-		    {  
-		        e.printStackTrace();  
-		    }  
-		    
-		}
+		        String f=sc.nextLine();
+		        oo.put("email", f);
+		        hc.createObject(oo);
+		    }  	
 	/**
 	 * 函数名：BookTime()
 	 * 作者：曲正锟
@@ -86,36 +50,19 @@ public class StuInfo {
 	 * 返回值：无
 	 * 功能：用于预定跑操时间
 	 * @return
+	 * @throws ParseException 
 	 */
-	public void Booktime() {
-		 Connection cnn=connect();   
-		 String sql="insert into StudentInfo(hour,minute,day,month,year) values(?,?,?,?,?)";
-		    try{  
-		        PreparedStatement preStmt =cnn.prepareStatement(sql); 
-		        System.out.println("Please put into the hour: ");
-		        int a=sc.nextInt();
-		        preStmt.setInt(1,a);  
-		        System .out.println("PLease put into the minute: ");
-		        int b=sc.nextInt();
-		        preStmt.setInt(2,b); 
-		        System .out.println("PLease put into the day: ");
-		        int c=sc.nextInt();
-		        preStmt.setInt(3,c);
-		        System .out.println("PLease put into the month: ");
-		        int d=sc.nextInt();
-		        preStmt.setInt(4,d);
-		        System .out.println("PLease put into the year: ");
-		        int e=sc.nextInt();
-		        preStmt.setInt(5,e);
-		        preStmt.executeUpdate();  
-		    }  
-		    catch (SQLException e)  
-		    {  
-		        e.printStackTrace();  
-		    }
+	public void Booktime() throws ParseException {
+		HttpClient hc=new HttpClient();
+		SimpleDateFormat simFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss"); 
+		String a=sc.nextLine();
+		Date dtBeg = simFormat.parse(a);
+	    Map<String,Object> oo=new HashMap();
+	    oo.put("scheduled_time", a);
+	    hc.createObject(oo);
 	}
 	/**
-	 * 函数名：BookTime()
+	 * 函数名：CheckBook()
 	 * 作者：曲正锟
 	 * 参数：无
 	 * 返回值：无
@@ -123,21 +70,14 @@ public class StuInfo {
 	 * @return
 	 */
 	public void CheckBook() {
-		//查询语句
-	    String sql = "select * from StudentInfo"; 
-	    //连接
-	    Connection conn = connect();
-        PreparedStatement pst = null;
-	    try {
-         pst = (PreparedStatement) conn.prepareStatement(sql);
-         ResultSet rs = pst.executeQuery();
-	        while (rs.next()) {
-	        		System.out.println(rs.getInt("hour")+"点"+rs.getInt("minute")+"分："+rs.getInt("month"));
-	            }     
-	        } 
-	    catch (SQLException e) {
-	        	 e.printStackTrace();  
-	        }
+		 HttpClient hc=new HttpClient();
+		 Map<String,Object> oo=new HashMap();
+		 oo.put("Filtercondition","id>0" );
+		 ArrayList a=hc.getAnswerObjects(hc.readObjectWithFilterConditions(oo));
+		 for(int i=0;i<a.size();i++) {
+			 Date c=(Date) ((Map<String, Object>) a.get(i)).get("scheduled_id");
+			 System.out.println(c);
+		 }
 	}
 	/**
 	 * 函数名：Monitor()
@@ -148,37 +88,72 @@ public class StuInfo {
 	 * @return
 	 */
 	public void moniter()  {
-		Calendar now=Calendar.getInstance();
-		int now_year=now.get(Calendar.YEAR);
-		int now_month=now.get(Calendar.MONTH)+1;
-		String now_day=Integer.toString(now.get(Calendar.DAY_OF_MONTH));// 获取今天的日期，年份，月份
-		int da=Integer.parseInt(now_day);
-		int now_hour=now.get(Calendar.HOUR_OF_DAY);
-		int now_minute=now.get(Calendar.MINUTE);
-		int now_second=now.get(Calendar.SECOND);
-		String sql = "select * from StudentInfo"; 
-		Connection conn = connect();
-		PreparedStatement pst = null;
-		try {
-				pst = (PreparedStatement) conn.prepareStatement(sql);
-				ResultSet rs = pst.executeQuery(sql);
-				while(rs.next()){	
-					if(now_year==rs.getInt("year")&&now_month==rs.getInt("month")&&da==rs.getInt("day")&&now_hour==rs.getInt("hour")&&now_minute==rs.getInt("minute")) { 
-				/*提醒方式*/
-					 }
-				  }
-				rs.close();
-				conn.close();
+		 Calendar now=Calendar.getInstance();
+		 int now_year=now.get(Calendar.YEAR);
+		 int now_month=now.get(Calendar.MONTH)+1;
+		 String now_day=Integer.toString(now.get(Calendar.DAY_OF_MONTH));// 获取今天的日期，年份，月份
+		 int now_da=Integer.parseInt(now_day);
+		 int now_hour=now.get(Calendar.HOUR_OF_DAY);
+		 int now_minute=now.get(Calendar.MINUTE);
+		 HttpClient hc=new HttpClient();
+		 Map<String,Object> oo=new HashMap();
+		 oo.put("Filtercondition","id>0" );
+		 ArrayList a=hc.getAnswerObjects(hc.readObjectWithFilterConditions(oo));
+		 for(int i=0;i<a.size();i++) {
+			 Date c=(Date) ((Map<String, Object>) a.get(i)).get("scheduled_id");
+			if(now_year==c.getYear()&&now_month==c.getMonth()&&now_da==c.getDay()&&now_hour==c.getHours()
+					&&now_minute==c.getMinutes()) {
+				;//提醒方式
 			}
-	    catch(SQLException e) {
-				//数据库连接失败异常处理
-				e.printStackTrace();  
-				}
-		catch (Exception e) {
-				 e.printStackTrace();
-				}
-		finally{
-				;
-				}
-	 }
+		 }
+	}
+	/**
+	 * 函数名：ChangeInfo()
+	 * 作者：曲正锟
+	 * 参数：无
+	 * 返回值：无
+	 * 功能：用于更改个人信息
+	 * @return
+	 */
+	public void ChangeInfo() {
+		 HttpClient hc=new HttpClient();
+		 Map<String,Object> oo=new HashMap();
+		 int a=sc.nextInt();
+		 String b=sc.nextLine();
+		 oo.put("", "");//根据点击的按钮决定
+		 hc.updateObject(oo);
+	}
+	/**
+	 * 函数名：AddFriend()
+	 * 作者：曲正锟
+	 * 参数：无
+	 * 返回值：无
+	 * 功能：用于添加好友
+	 * @return
+	 */
+	public void AddFriend() {
+		 int a=sc.nextInt();//输入的好友id
+		 HttpClient hc=new HttpClient();
+		 Map<String,Object> oo=new HashMap();
+		 oo.put("a_id_1","");//个人id
+		 oo.put("a_id_2, "");//好友id
+		//向账号为a的用户发送请求推送
+		//同意后进行添加
+		 hc.createObject(oo);
+	}
+	/**
+	 * 函数名：DeleteFriend()
+	 * 作者：曲正锟
+	 * 参数：无
+	 * 返回值：无
+	 * 功能：用于删除好友
+	 * @return
+	 */
+	public void DeleteFriend() {
+		 HttpClient hc=new HttpClient();
+		 Map<String,Object> oo=new HashMap();
+		 oo.put("a_id_1","");//个人id
+		 oo.put("a_id_1","");//好友id
+		 hc.deleteObject(oo);
+	}
 }
