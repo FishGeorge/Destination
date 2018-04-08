@@ -6,8 +6,11 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RunningActivity extends AppCompatActivity {
+    private boolean isRunnning = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +28,7 @@ public class RunningActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // 此处调用暂停函数
-
+                isRunnning = false;
                 // 使暂停按钮不可见
                 btn_pause.setVisibility(View.INVISIBLE);
                 // 使结束和继续按钮可见
@@ -38,7 +41,7 @@ public class RunningActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // 此处调用继续函数
-
+                isRunnning = true;
                 // 使结束和继续按钮不可见
                 btn_continue.setVisibility(View.INVISIBLE);
                 btn_finish.setVisibility(View.INVISIBLE);
@@ -64,6 +67,11 @@ public class RunningActivity extends AppCompatActivity {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
             System.out.println("返回键执行！");
         }
+        //
+        if (isRunnning)
+            Toast.makeText(getApplicationContext(), "还在计时呢！", Toast.LENGTH_SHORT).show();
+        if (!isRunnning)
+            Toast.makeText(getApplicationContext(), "要放弃本次记录吗？", Toast.LENGTH_SHORT).show();
         // 返回键无效化
         return false;
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/White"
+    android:background="@color/LightGray"
     tools:context=".Main_Me">
 
     <android.support.v7.widget.Toolbar
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
-        android:text="Admin_test"
+        android:text="Test"
         android:textColor="@color/Black"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/img_user"
@@ -70,9 +70,115 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:text="71116000_Admin"
-        android:textColor="@color/LightGray"
+        android:textColor="@color/White"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/img_me_bck"
         app:layout_constraintStart_toStartOf="@+id/text_user_nickname" />
+
+    <ImageView
+        android:id="@+id/img_share"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@android:drawable/ic_menu_share"
+        app:layout_constraintBottom_toTopOf="@+id/img_me_bck"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/img_me_bck2"
+        android:layout_width="wrap_content"
+        android:layout_height="201dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/runningbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_me_bck" />
+
+    <ImageView
+        android:id="@+id/img_me_bck3"
+        android:layout_width="wrap_content"
+        android:layout_height="123dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/main_exercise_bckg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_me_bck2" />
+
+    <TextView
+        android:id="@+id/text_datacenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="数据中心"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_record"
+        app:layout_constraintTop_toTopOf="@+id/text_record" />
+
+    <TextView
+        android:id="@+id/text_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="跑步历史纪录"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_me_bck3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_me_bck3" />
+
+    <TextView
+        android:id="@+id/text_weekgoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="每周目标"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_record"
+        app:layout_constraintTop_toTopOf="@+id/text_record" />
+
+    <TextView
+        android:id="@+id/text_totalexercisetime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="总跑步"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_me_bck2" />
+
+    <TextView
+        android:id="@+id/text_totalexercisetime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="分钟"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_totaltime"
+        app:layout_constraintTop_toTopOf="@+id/text_totaltime" />
+
+    <TextView
+        android:id="@+id/text_totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_totalexercisetime1"
+        app:layout_constraintTop_toTopOf="@+id/text_totalexercisetime1" />
 
 </android.support.constraint.ConstraintLayout>

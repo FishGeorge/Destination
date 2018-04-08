@@ -44,12 +44,12 @@ public class Main_Discovery extends Fragment implements ViewPager.OnPageChangeLi
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
 
-        bt1.setBackgroundColor(Color.parseColor("#92D050"));
-        bt2.setBackgroundColor(Color.parseColor("#FFFFFF"));
-        bt3.setBackgroundColor(Color.parseColor("#FFFFFF"));
-        bt1.setTextColor(getResources().getColorStateList(R.color.White));
-        bt2.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-        bt3.setTextColor(getResources().getColorStateList(R.color.DarkGray));
+        bt1.setBackgroundResource(R.color.White);
+        bt2.setBackgroundResource(R.color.LightGray);
+        bt3.setBackgroundResource(R.color.LightGray);
+        bt1.setTextColor(getResources().getColorStateList(R.color.colorPrimary));
+        bt2.setTextColor(getResources().getColorStateList(R.color.Black));
+        bt3.setTextColor(getResources().getColorStateList(R.color.Black));
 
         //尚未实现子Fragment
         list.add(new Main_Discovery_state());
@@ -68,21 +68,21 @@ public class Main_Discovery extends Fragment implements ViewPager.OnPageChangeLi
         initBtnListener();
         switch (v.getId()) {
             case R.id.frag1:
-                bt1.setTextColor(getResources().getColorStateList(R.color.White));
-                bt2.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt3.setTextColor(getResources().getColorStateList(R.color.DarkGray));
+                bt1.setTextColor(getResources().getColorStateList(R.color.colorPrimary));
+                bt2.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt3.setTextColor(getResources().getColorStateList(R.color.Black));
                 viewPager.setCurrentItem(0);
                 break;
             case R.id.frag2:
-                bt1.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt2.setTextColor(getResources().getColorStateList(R.color.White));
-                bt3.setTextColor(getResources().getColorStateList(R.color.DarkGray));
+                bt1.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt2.setTextColor(getResources().getColorStateList(R.color.colorPrimary));
+                bt3.setTextColor(getResources().getColorStateList(R.color.Black));
                 viewPager.setCurrentItem(1);
                 break;
             case R.id.frag3:
-                bt1.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt2.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt3.setTextColor(getResources().getColorStateList(R.color.White));
+                bt1.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt2.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt3.setTextColor(getResources().getColorStateList(R.color.colorPrimary));
                 viewPager.setCurrentItem(2);
                 break;
         }
@@ -99,22 +99,22 @@ public class Main_Discovery extends Fragment implements ViewPager.OnPageChangeLi
         initBtnListener();
         switch (position) {
             case 0:
-                bt1.setBackgroundResource(R.color.colorPrimary);
-                bt1.setTextColor(getResources().getColorStateList(R.color.White));
-                bt2.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt3.setTextColor(getResources().getColorStateList(R.color.DarkGray));
+                bt1.setBackgroundResource(R.color.White);
+                bt1.setTextColor(getResources().getColorStateList(R.color.colorPrimary));
+                bt2.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt3.setTextColor(getResources().getColorStateList(R.color.Black));
                 break;
             case 1:
-                bt2.setBackgroundResource(R.color.colorPrimary);
-                bt1.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt2.setTextColor(getResources().getColorStateList(R.color.White));
-                bt3.setTextColor(getResources().getColorStateList(R.color.DarkGray));
+                bt2.setBackgroundResource(R.color.White);
+                bt1.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt2.setTextColor(getResources().getColorStateList(R.color.colorPrimary));
+                bt3.setTextColor(getResources().getColorStateList(R.color.Black));
                 break;
             case 2:
-                bt3.setBackgroundResource(R.color.colorPrimary);
-                bt1.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt2.setTextColor(getResources().getColorStateList(R.color.DarkGray));
-                bt3.setTextColor(getResources().getColorStateList(R.color.White));
+                bt3.setBackgroundResource(R.color.White);
+                bt1.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt2.setTextColor(getResources().getColorStateList(R.color.Black));
+                bt3.setTextColor(getResources().getColorStateList(R.color.colorPrimary));
                 break;
         }
     }
@@ -126,8 +126,8 @@ public class Main_Discovery extends Fragment implements ViewPager.OnPageChangeLi
 
     //初始化按钮
     private void initBtnListener() {
-        bt1.setBackgroundResource(R.color.White);
-        bt2.setBackgroundResource(R.color.White);
-        bt3.setBackgroundResource(R.color.White);
+        bt1.setBackgroundResource(R.color.LightGray);
+        bt2.setBackgroundResource(R.color.LightGray);
+        bt3.setBackgroundResource(R.color.LightGray);
     }
 }
