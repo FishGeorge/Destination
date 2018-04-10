@@ -1,6 +1,5 @@
 package com.seuse16.destination;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -14,7 +13,6 @@ import java.util.List;
 
 
 public class Main_Discovery extends Fragment implements ViewPager.OnPageChangeListener, View.OnClickListener {
-
     private List<Fragment> list;
     private View view;
     private ViewPager viewPager;
@@ -54,7 +52,7 @@ public class Main_Discovery extends Fragment implements ViewPager.OnPageChangeLi
         //尚未实现子Fragment
         list.add(new Main_Discovery_state());
         list.add(new Main_Discovery_appoint());
-        list.add(new Main_Discovery_nearby());
+        list.add(new Main_Discovery_friends());
 
         viewPager.setAdapter(new FragmentAdapter(getFragmentManager(), list));
         viewPager.setOnPageChangeListener((ViewPager.OnPageChangeListener) this);
