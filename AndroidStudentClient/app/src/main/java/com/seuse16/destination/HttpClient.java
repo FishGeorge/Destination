@@ -1,8 +1,10 @@
 package com.seuse16.destination;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -13,11 +15,7 @@ import java.io.PrintWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
-
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 
 public class HttpClient {
     private static String serverURL = "http://106.14.151.245:8080/destination/JsonAction";
@@ -101,7 +99,7 @@ public class HttpClient {
     }
 
     public static Map<String, Object> getSingleAnswerObject(String answer) {
-        System.out.println(answer);
+//        System.out.println("-----------------"+answer);
         JSONObject tmp = JSONObject.parseObject(answer);
         JSONArray arr = tmp.getJSONArray("answer");
         int l = arr.size();

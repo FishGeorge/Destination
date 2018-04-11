@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                     // 页面跳转
                     Intent intent_login = new Intent(LoginActivity.this, MainActivity.class);
                     Bundle login = new Bundle();
-                    login.putString("account_login_name", String.valueOf(account_map.get("a_name")));
+                    login.putString("account_login_id", String.valueOf(account_map.get("a_id")));
                     intent_login.putExtras(login);
                     // 跳转
                     startActivity(intent_login);
